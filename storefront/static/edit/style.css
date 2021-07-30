@@ -1,0 +1,60 @@
+*{
+    font-family: 'Hermit', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+div.UI {
+    margin-left: 85%;
+}
+
+div.UI a{
+    text-decoration: none;
+    color:inherit;
+}
+
+div.maincontent{
+    width:20%;
+    margin-left:43%;
+}
+
+ul{
+    list-style-type: none;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    text-decoration: none;
+    color:inherit;
+    font-weight: bold;
+}
+
+li a{
+    font-size:30px;
+    text-decoration: none;
+    color:inherit;
+}
+
+form.edit{
+    margin-left:5%
+}
+
+button{
+    margin: 10px;
+}
+
+form {
+    display: table;
+}
+
+form > div {
+    display: table-row;
+}
+
+label {
+    display: table-cell;
+}
+
+input {
+    display: table-cell;
+}

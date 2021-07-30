@@ -1,0 +1,83 @@
+*{
+    font-family: 'Hermit', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+div.UI {
+    margin-left: 85%;
+}
+
+div.UI a{
+    text-decoration: none;
+    color:inherit;
+}
+
+div.maincontent{
+    width:20%;
+    margin-left:41%;
+}
+
+
+div.searchbar{
+    margin-left: 36%;
+    margin-bottom:7%;
+}
+
+div.searchbar form div{
+    display: block;
+    float: left;
+    width: 40%;
+}
+
+div.searchbar form button{
+    display: block;
+    float: left;
+}
+
+ul{
+    list-style-type: none;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    text-decoration: none;
+    color:inherit;
+    font-weight: bold;
+}
+
+li a{
+    font-size:30px;
+    text-decoration: none;
+    color:inherit;
+}
+
+div.banner{
+    margin-left: 24%;
+}
+
+section.featured{
+    margin-left: 43%;
+    margin-top:5%;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.productlist{
+    width:90%;
+    margin-left:16%;
+}
+
+.product{
+    display: inline-block;
+    width: 400px;
+    margin:20px 10px 40px 10px;
+    vertical-align: top;
+}
+
+.product img{
+    width:390px;
+    height:360px;
+    vertical-align: top;
+    border: 5px solid rgb(73, 73, 73)
+}

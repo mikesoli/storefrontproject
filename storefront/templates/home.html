@@ -1,0 +1,55 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'home/style.css' %}">
+        <title>Games and Goods!</title>
+    </head>
+    <body>
+        <header>
+            <div class="curruser">
+                Logged in as: {{ user.email }}
+            </div>
+            <div class="UI">
+                <button><a href='/edit'>Edit My Account</a></button>
+                <button><a href='/logout'>Logout</a></button>
+                <a href='/cart'><img src="{% static 'images/shoppingcart.png' %}" alt="shoppingcart" class="shoppingcart"></a>
+            </div>
+        </header>
+        <div class="maincontent">
+            <ul>
+                <li class="home"><a href='/home'>Home</a></li>
+                <br>
+                <li class="categories"><a href='/categories'>Categories</a></li>
+            </ul>
+        </div>
+        {% include 'shared/searchbar.html' %}
+        <div class="banner">
+            <img src="{% static 'images/storeheader.png' %}" alt="storeheader" class="storeheader">
+        </div>
+        <div>
+            <section class="featured">
+                <h3>Featured Products</h3>
+            </section>
+        </div>
+        <div class="productlist">
+            <div class="product">
+                <a href="/product/1">
+                    <img src="{% static 'images/product0.png' %}" alt="Featured 1" class="product1">
+                </a>
+            </div>
+            <div class="product">
+                <a href="/product/4">
+                    <img src="{% static 'images/product3.png' %}" alt="Featured 2" class="product2">
+                </a>
+            </div>
+            <div class="product">
+                <a href="/product/6">
+                    <img src="{% static 'images/product5.png' %}" alt="Featured 3" class="product3">
+                </a>
+            </div>
+        </div>
+    </body>
+</html>   

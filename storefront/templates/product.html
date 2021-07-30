@@ -1,0 +1,49 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'product/style.css' %}">
+        <title>{{product.name}}</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                Logged in as: {{ user.email }}
+            </div>
+            <div class="UI">
+                <button><a href='/edit'>Edit My Account</a></button>
+                <button><a href='/logout'>Logout</a></button>
+                <a href='/cart'><img src="{% static 'images/shoppingcart.png' %}" alt="shoppingcart" class="shoppingcart"></a>
+            </div>
+        </header>
+        <div class="maincontent">
+            <ul>
+                <li class="home"><a href='/home'>Home</a></li>
+                <li class="categories"><a href='/categories'>Categories</a></li>
+            </ul>
+        </div>
+        {% include 'shared/searchbar.html' %}
+        <div class="mainproduct">
+            <div class="productimg">
+                    <a href='/product/{{product.id}}'><img src="{% static product.image %}"></a>
+            </div>
+            <div class="productinfo">
+                <p>{{product.name}}</p>
+                <p>${{product.price}}
+                <form action="/cart/{{product.id}}" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="quantity">Quantity:</label>
+                        <input type ="number" name="quantity" id="quantity" class="form-control">
+                    </div>
+                    <button class="btn btn-primary">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+        <div class="productdesc">
+            {{product.description}}
+        </div>
+    </body>
+</html>

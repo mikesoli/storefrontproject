@@ -1,0 +1,73 @@
+*{
+    font-family: 'Hermit', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+div.UI {
+    margin-left: 85%;
+}
+
+div.UI a{
+    text-decoration: none;
+    color:inherit;
+}
+
+div.maincontent{
+    width:20%;
+    margin-left:41%;
+}
+
+
+div.searchbar{
+    margin-left: 36%;
+}
+
+div.searchbar form div{
+    display: block;
+    float: left;
+    width: 40%;
+}
+
+div.searchbar form button{
+    display: block;
+    float: left;
+}
+
+ul{
+    list-style-type: none;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    text-decoration: none;
+    color:inherit;
+    font-weight: bold;
+}
+
+li a{
+    font-size:30px;
+    text-decoration: none;
+    color:inherit;
+}
+
+div.cardgames{
+    margin-left:22%;
+}
+
+div.cardgames h2{
+    margin-left:35%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+div.boardgames{
+    margin-left:22%;
+    padding-bottom:5%;
+}
+
+div.boardgames h2{
+    margin-left:31%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}

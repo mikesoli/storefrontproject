@@ -1,0 +1,32 @@
+*{
+    font-family: 'Hermit', monospace;
+}
+#form {
+    display:flex;
+    justify-content: left;
+}
+
+#form > section {
+    margin: 5em 5em;
+}
+
+
+#form > section > form {
+    display: table;
+}
+
+#form > section > form > div {
+    display: table-row;
+}
+
+label {
+    display: table-cell;
+}
+
+input {
+    display: table-cell;
+}
+
+ul.messages {
+    list-style: none;
+}
